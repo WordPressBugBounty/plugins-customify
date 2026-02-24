@@ -1,10 +1,10 @@
 === Customify - Intuitive Website Styling ===
 Contributors: pixelgrade, vlad.olaru, babbardel, razvanonofrei, gorby31
 Tags: design, customizer, fonts, colors, gutenberg, font palettes, color palettes
-Requires at least: 4.9.14
-Tested up to: 5.9.5
-Stable tag: 2.10.6
-Requires PHP: 5.6.40
+Requires at least: 5.9.0
+Tested up to: 6.9
+Stable tag: 2.10.7
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,8 +30,17 @@ This plugin is **primarily intended** to be used together with [Pixelgrade theme
 
 == Changelog ==
 
+= 2.10.7 =
+* Fixed early translation loading notice on WordPress 6.7+ by deferring plugin config initialization.
+* Fixed Customizer menu items reordering and nesting by removing conflicting CSS overrides.
+
 = 2.10.6 =
+* Security: added capability checks to AJAX handlers for defense-in-depth.
 * Fix inline font script breaking AJAX-based theme navigation.
+* PHP 8.x compatibility: added null safety guards for array operations.
+* Updated minimum PHP requirement to 7.4.
+* Updated minimum WordPress requirement to 5.9.
+* Tested with WordPress 6.9.
 
 = 2.10.5 =
 * Security fixes.
